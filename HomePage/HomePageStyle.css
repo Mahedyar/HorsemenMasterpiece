@@ -2,6 +2,7 @@
     width:100vw;
     height: 200vh;
     margin: 0;
+    font-family: 'Comfortaa', cursive;
 
 
 }
@@ -64,11 +65,29 @@
     width: 100vw;
 }
 .secondpart__circledtextHolder{
-    margin: 5vh 8vw;
     display: flex;
     justify-content: center;
-
 }
 .secondpart__circledtextHolder__image{
     width: 70vw;
 }
+.secondpart--margin{
+    margin: 5vh 8vw;
+}
+.secondpart__Text{
+    font-size: 4vw;
+    font-weight: 700;
+    /*font-weight: bold;*/
+    line-height: 3vh;
+}
+.secondpart__button{
+    font-size: 3.5vw;
+    color: white;
+    padding: 10px 30px ;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: #c9916b;
+
+}
+
+
