@@ -1,9 +1,46 @@
 .maincontainer {
-    width: 100vw;
+    width:100vw;
     height: 100vh;
+
 }
 
 .header{
-    width: 80vw;
-    height: 60vh;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    background-image: url("Image/background.png"),url("Image/backgroundshape.png");
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 5vw;
+
+}
+.header__imageholder{
+    display: flex;
+    width: 60vw;
+    height: 50vh;
+    justify-content: right;
+    align-self: end;
+}
+.header__imageholder__image{
+    width: 100%;
+
+}
+
+.header__text {
+    align-self:center ;
+    color:lightcoral;
+    font-size: 7vw;
+    width: 40vw;
+}
+
+.header__button {
+    font-size: 3vw;
+    color: white;
+    padding: 5px 20px ;
+    border-color: white;
+    border-style: solid;
+    border-radius: 25px;
+    border-width: 2px;
+
+
 }
