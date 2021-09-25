@@ -1,15 +1,19 @@
-.maincontainer {
+
+
+body {
     width:100vw;
     height: 200vh;
     margin: 0;
     font-family: 'Comfortaa', cursive;
+    line-height: 3vh;
 }
 
 .header{
     width: 95vw;
-    height: 35vh;
+    height: 45vh;
     display: flex;
-    background-image: url("Image/backgroundshape.png"),url("Image/background.png");
+    flex-direction: row;
+    background-image: url(Image/backgroundshape.png),url(Image/background.png);
     background-position: top ;
     background-size: 30vw 30vh , cover;
     background-repeat: no-repeat;
@@ -20,8 +24,8 @@
 }
 .header__imageholder{
     display: flex;
-    width: 60vw;
-    height: 35vh;
+    width: 65vw;
+    height: 45vh;
     justify-content: right;
     align-self: end;
     margin-left: -20vw;
@@ -69,10 +73,10 @@
     margin: 5vh 8vw;
 }
 .secondpart__Text{
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-weight: 700;
     /*font-weight: bold;*/
-    line-height: 3vh;
+
 }
 .secondpart__button{
     font-size: 3.5vw;
@@ -81,6 +85,13 @@
     border-radius: 25px;
     font-weight: bold;
     background-color: #c9916b;
+}
+
+.secondpart__4Image{
+    margin-top: 30vh;
+}
+.secondpart__4Image div{
+    margin-top: 10vh;
 }
 
 
