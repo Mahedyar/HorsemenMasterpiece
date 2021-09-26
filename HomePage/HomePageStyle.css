@@ -42,6 +42,7 @@ h4{
 
 .header__imageholder__image {
     width: 100%;
+    align-self: end;
 }
 
 .header__text {
@@ -140,6 +141,7 @@ h4{
 .belowSlider img {
     height: 50vh;
     width: 100vw;
+    /*transform: scale(1.2);*/
 }
 .belowSlider__text{
     padding: 5vh 8vw;
