@@ -20,41 +20,58 @@ h1{
     display: block;
     width: 30px;
     height: 5px;
-    background-color: white;
+    background-color: var(--first-color);
     margin: 5px 0;
     border-radius: 10px;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
     padding: 15px 20px;
-    align-items: center;
     background-color: var(--background-color);
 }
-.main-nav{
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav , #hamburger-links{
      display: none;
-    list-style-type: none;
+     list-style-type: none;
  }
-.main-nav a {
+.main-nav a , #hamburger-links a {
     text-decoration: none;
-    padding: 5px 10px;
+    /*padding: 5px 10px;*/
+    /*padding-left: 40px;*/
     color: white;
     font-weight: 700;
     transition: all .1s ease-in;
+    justify-self: center;
+}
+#hamburger-links{
+    background-color:var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 3vw 2vh;
+    line-height:8vh;
 }
 
-.main-nav a:hover{
+
+.main-nav a:hover , #hamburger-links a:hover{
     /*background-color: gray;*/
     color: var(--first-color);
 }
 
-@media (min-width: 770px) {
+@media (min-width: 359px) {
     .hamburger-menu{
         display: none;
     }
     .main-nav{
         display: flex;
+    }
+    #hamburger-links{
+        width: 100vw;
     }
 
 
