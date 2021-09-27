@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<footer>
+<footer id="footer">
     <div class="column">
         <div class="column--one ">
             <h3>Level 13, 2 Elizabeth St,<br>
@@ -19,11 +19,14 @@
                 Subscribe and see what's new
             </h6>
             <div class="column--one--input--button">
-                <input class="column--one__input" name="name" type="text" placeholder="Name" required>
-                <button class="column--one__button" type="submit">Send</button>
+                <input class="column--one__input" name="name" type="text" placeholder="Name" aria-required="true" aria-invalid="true" aria-describedby="wpcf7-f62-o1-ve-your-name">
+                <span class="wpcf7-not-valid-tip" aria-hidden="true"></span>
+                <button class="column--one__button" type="submit" value="send">Send</button>
+                <span class="ajax-loader"></span>
             </div>
+            <div class="wpcf7-response-output" aria-hidden="true">One or more fields have an error. Please check and try again.</div>
         </div>
-        <div class="column--two">
+        <div>
             <img src="company6_logo_footer-1-182x300.png">
         </div>
     </div>
@@ -34,7 +37,7 @@
             | All Rights Reserved | Powered by
             <a href="" target="_blank">WordPress</a>
         </div>
-        <div class="icon">
+        <div>
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 
                  viewBox="0 0 172 172"
