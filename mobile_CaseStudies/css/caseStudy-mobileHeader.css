@@ -1,0 +1,116 @@
+/*@media screen and (max-width: 500px) {*/
+
+    .mainPage{
+        width: 100vw;
+        height: 100vh;
+        /*margin: auto;*/
+        display: grid;
+        grid-template: 40rem 8rem 25rem 25rem 25rem 25rem / 100vw;
+        grid-template-areas: "Header" "wrapper" "Two-cards" "Lamp" "SquareBox" "bag";
+        grid-gap: 2vh;
+        justify-items: center;
+    }
+
+    .Two-cards, .Lamp, .SquareBox, .bag{
+        overflow: hidden;
+        width: 90%;
+    }
+
+    .Header{
+        grid-area: Header;
+        background: url("../images/background.png");
+        /*text-align: center;*/
+        /*vertical-align: center;*/
+        width: 100vw;
+    }
+
+    .wrapper{
+        grid-area: wrapper;
+        background-color: var(--wrapper-background);
+    }
+
+    .Two-cards{
+        grid-area: Two-cards;
+        /*width: 100vw;*/
+        /*height: 25rem;*/
+    }
+
+    .Lamp{
+        grid-area: Lamp;
+    }
+
+    .SquareBox{
+        grid-area: SquareBox;
+    }
+
+    .bag{
+        grid-area: bag;
+    }
+
+    .Header--content{
+        color: var(--Header-content);
+        /*height: 700px;*/
+        /*display: table-cell;*/
+        /*vertical-align: middle;*/
+        text-align: center;
+        /*padding: 30vh 4vw;*/
+        margin: 30vh 4vw 0 4vw;
+        font-size: 3.2rem;
+        letter-spacing: 0;
+        line-height: 54px;
+
+    }
+
+    .grids{
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .images{
+        width: 100%;
+        height: 100%;
+        display: block;
+        /*margin: 0 5vw;*/
+        transition: .25s ease-in-out;
+        backface-visibility: hidden
+
+    }
+
+    .images-hovering{
+        transition: 0.25s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+     .grids:hover {
+        transform: scale(1.2);
+        filter: grayscale(20%);
+    }
+
+     .grids:hover .images-hovering{
+         opacity: 1;
+     }
+
+    .images--icons{
+        background-color: var(--images-icons-background);
+        color: var(--wrapper-background);
+        display: inline-block;
+        margin-left: -5px;
+        font-size: x-large;
+    }
+
+    ion-icon{
+        padding: 2.9vh 4.5vw;
+    }
+
+    .images--icons:hover{
+        background-color: var(--wrapper-background);
+        color: var(--images-icons-background);
+    }
+/*}*/
