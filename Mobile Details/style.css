@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+
+}
+
+:root {
+    --first-color: #c9916b;
+    --second-color: #ffffff;
+    --third--color: #d6dad8;
+}
+.container_main {
+    display: grid;
+    grid-template: 100vh 120vh 170vh 90vh/100% auto auto auto;
+    grid-template-areas: "header"
+                         "aside_start"
+                         "container"
+                         "aside_end";
+}
+.header{
+    grid-area: header;
+    /*background-color: purple;*/
+}
+.image__header{
+    width: 100%;
+    height: auto;
+}
+.aside_start{
+    grid-area: aside_start;
+    /* background-color: pink;*/
+}
+h1 {
+    font-size: 62px;
+    line-height: 72px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--first-color);
+    margin-top: 43vh;
+}
+
+h6 {
+    text-align: center;
+    font-size: 2em;
+    line-height: 5.5vh;
+    padding: 0 12vw;
+    font-weight: 400;
+    margin-bottom: 15vh;
+}
+.container{
+    grid-area: container;
+    /* background-color: #ff819c;*/
+}
+.container__image {
+    grid-area: container;
+    display: grid;
+    grid-template: 85vh 85vh/50% 50%;
+    grid-template-areas: "pic1 pic2"
+                         "pic3 pic4";
+    row-gap: 15vh;
+}
+.image1 {
+    grid-area: pic1;
+    /*background-color: green;*/
+}
+
+.image2 {
+    grid-area: pic2;
+    /*background-color: purple;*/
+}
+
+.image3 {
+    grid-area: pic3;
+    /* background-color: red;*/
+}
+
+.image4 {
+    grid-area: pic4;
+    /* background-color: plum;*/
+}
+
+.image__big {
+    width: 100%;
+    height: 93%;
+}
+
+.image__small {
+    width: 50%;
+    height: 80%;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.image3, .image2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aside_end{
+    grid-area: aside_end;
+    /* background-color: gray;*/
+}
+.h6--part1--aside_end{
+    color: var(--first-color);
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+
+}
