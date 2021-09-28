@@ -34,13 +34,18 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.main-nav , #hamburger-links{
+.main-nav {
      display: none;
      list-style-type: none;
  }
+
+#hamburger-links{
+    display: none;
+}
+
 .main-nav a , #hamburger-links a {
     text-decoration: none;
-    /*padding: 5px 10px;*/
+    padding: 5px 10px;
     /*padding-left: 40px;*/
     color: white;
     font-weight: 700;
@@ -63,15 +68,15 @@ nav{
     color: var(--first-color);
 }
 
-@media (min-width: 359px) {
+@media (min-width: 767px) {
     .hamburger-menu{
         display: none;
     }
     .main-nav{
         display: flex;
     }
-    #hamburger-links{
-        width: 100vw;
+    #hamburger-links {
+        display: none;
     }
 
 
