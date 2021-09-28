@@ -1,0 +1,63 @@
+.mainpage{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template: 40vh 8vh 25vh 25vh / 50% auto;
+    grid-template-areas:"Header  Header"
+                        "wrapper  wrapper"
+                        "Two-cards  Lamp"
+                        "SquareBox  bag";
+    grid-gap: 2vh;
+    justify-items: center;
+}
+/*.Two-cards, .Lamp, .SquareBox, .bag{
+    overflow: hidden;
+    width: 90%;
+    background-color: purple;
+
+}*/
+.header{
+    grid-area: Header;
+    background-image: url(comp6-patternbg.png);
+    /*text-align: center;*/
+    /*vertical-align: center;*/
+
+
+
+}
+.Header--content{
+    color: brown;
+    /*height: 700px;*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    text-align: center;
+    /*padding: 30vh 4vw;*/
+    margin: 30vh 4vw 0 4vw;
+    font-size: 3.2rem;
+    letter-spacing: 0;
+    line-height: 54px;
+
+}
+.wrapper{
+    grid-area: wrapper;
+    background-color: darksalmon;
+}
+
+.two-cards{
+    grid-area: Two-cards;
+    /*width: 100vw;*/
+    /*height: 25rem;*/
+}
+
+.lamp{
+    grid-area: Lamp;
+}
+
+.squareBox{
+    grid-area: SquareBox;
+}
+
+.bag{
+    grid-area: bag;
+    background-color: maroon;
+}
