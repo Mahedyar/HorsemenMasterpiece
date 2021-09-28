@@ -28,7 +28,7 @@ body {
     background-image: url(comp6-single-bg.jpg) ;
     background-position: center ;
     background-repeat: no-repeat;
-    background-size: contain ;
+    background-size: cover ;
     padding:0;
     margin: 0;
 }
@@ -124,11 +124,65 @@ h5 {
 @media screen and (max-width: 768px){
     .container_main {
         display: grid;
-        grid-template: 100vh 100vh 170vh 90vh/100% auto auto auto;
+        grid-template: 100vh 60vh 205vh 60vh/100% ;
         grid-template-areas: "header"
                          "aside_start"
                          "container"
                          "aside_end";
     }
+
+    h1 {
+        font-size: 37px;
+        line-height: 43px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-align: center;
+        color: var(--first-color);
+        margin-top: 10vh;
+    }
+    h6 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 2.5vh;
+        padding: 0 12vw;
+        font-weight: 400;
+
+    }
+
+    .container__image {
+        grid-area: container;
+        display: grid;
+        grid-template: 35vh 65vh 70vh 35vh/100% 100% 100% 100%;
+        grid-template-areas: "pic1"
+                             "pic2"
+                             "pic3"
+                             "pic4";
+        row-gap: 1vh;
+    }
+
+    .image__big {
+        width: 100%;
+        height: 93%;
+        object-fit: fill;
+    }
+    h5 {
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .image__small {
+        width: 100%;
+        height: 80%;
+    }
+    .h6--part1--aside_end{
+        color: var(--first-color);
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+
+    }
+
 
 }
