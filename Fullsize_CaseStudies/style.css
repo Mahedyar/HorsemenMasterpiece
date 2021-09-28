@@ -18,12 +18,12 @@
 }*/
 .header{
     grid-area: Header;
-    background-image: url(comp6-patternbg.png);
+
     /*text-align: center;*/
     /*vertical-align: center;*/
-
-
-
+}
+.header__background{
+    background-image: url(comp6-patternbg.png);
 }
 .Header--content{
     color: brown;
