@@ -11,7 +11,7 @@ body {
 }
 .container_main {
     display: grid;
-    grid-template: 100vh 120vh 170vh 90vh/100% auto auto auto;
+    grid-template: 100vh 100vh 170vh 90vh/100% auto auto auto;
     grid-template-areas: "header"
                          "aside_start"
                          "container"
@@ -21,10 +21,18 @@ body {
     grid-area: header;
     /*background-color: purple;*/
 }
-.image__header{
+.image__header
+{
     width: 100%;
-    height: auto;
+    height: 100vh;
+    background-image: url(comp6-single-bg.jpg) ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    padding:0;
+    margin: 0;
 }
+
 .aside_start{
     grid-area: aside_start;
     /* background-color: pink;*/
@@ -36,7 +44,7 @@ h1 {
     letter-spacing: 2px;
     text-align: center;
     color: var(--first-color);
-    margin-top: 43vh;
+    margin-top: 20vh;
 }
 
 h6 {
@@ -111,5 +119,16 @@ h5 {
     color: var(--first-color);
     margin-top: 30vh;
     margin-bottom: 5vh;
+
+}
+@media screen and (max-width: 768px){
+    .container_main {
+        display: grid;
+        grid-template: 100vh 100vh 170vh 90vh/100% auto auto auto;
+        grid-template-areas: "header"
+                         "aside_start"
+                         "container"
+                         "aside_end";
+    }
 
 }
