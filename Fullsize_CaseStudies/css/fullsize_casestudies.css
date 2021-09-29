@@ -1,0 +1,91 @@
+.main-page {
+    display: grid;
+    grid-template: 80vh 8vh 30vh/ 100%;
+    grid-template-areas:"header"
+                        "wrapper"
+                        "grid__picture";
+    grid-gap: 2vh;
+    justify-items: center;
+}
+
+.header {
+    grid-area: header;
+    background-image: url(../images/background.png);
+    width: 100%;
+    height: 100%;
+}
+
+.header--content {
+    color: var(--Header-content);
+    text-align: center;
+    margin: 30vh 4vw 0 4vw;
+    font-size: 3.87rem;
+    letter-spacing: 0;
+    line-height: 72px;
+
+}
+
+.wrapper {
+    grid-area: wrapper;
+    background-color: darksalmon;
+}
+
+.grid__picture {
+    grid-area: grid__picture;
+    background-color: gray;
+}
+
+.grid__picture--image {
+    display: grid;
+    grid-template: 30vh 30vh/ 50% 50%;
+    grid-template-areas: "two-card   lamp"
+                         "square-box   bag";
+}
+
+.two-cards {
+    grid-area: two-cards;
+    background-color: yellowgreen;
+}
+
+/*.grids{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.images{
+    width: 100%;
+    height: 100%;
+    display: block;
+    !*margin: 0 5vw;*!
+    transition: .25s ease-in-out;
+    backface-visibility: hidden
+
+}
+
+.images-hovering{
+    transition: 0.25s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}*/
+
+
+.lamp {
+    grid-area: lamp;
+    background-color: brown;
+}
+
+.square-box {
+    grid-area: square-box;
+    background-color: purple;
+}
+
+.bag {
+    grid-area: bag;
+    background-color: indianred;
+}

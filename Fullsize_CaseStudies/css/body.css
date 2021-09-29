@@ -1,0 +1,13 @@
+
+:root {
+    --Header-content : #e2ae8c;
+    --wrapper-background: #fff;
+    --images-icons-background: #c9916b;
+}
+
+
+body {
+    /*margin: 0;*/
+    font-family: 'Comfortaa', cursive;
+    margin: auto;
+}
