@@ -37,13 +37,13 @@
 .grid__picture--image {
     grid-area: grid__picture;
     display: grid;
-    grid-template: 50vh 50vh/ 50% 50%;
+    grid-template: 50vh 50vh/ 63vh 63vh;
     grid-template-areas: "two-card   lamp"
                          "square-box   bag";
     row-gap: 2.5vh;
     column-gap: 2.5vh;
     /*overflow: hidden;*/
-    /*justify-items: center;*/
+    /*justify-items: stretch;*/
 
 }
 .two-card{
@@ -73,12 +73,12 @@
     grid-area: wrapper_end;
 }
 img{
-    width: 64%;
+    width: 100%;
     height: 100%;
     display: block;
     transition: .25s ease-in-out;
     backface-visibility: hidden;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 
@@ -93,7 +93,6 @@ a{
     margin: 0;
     padding: 0;
     display: contents;
-
 }
 
 .middle__2card__sq {
@@ -101,7 +100,7 @@ a{
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -111,7 +110,7 @@ a{
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
@@ -171,7 +170,7 @@ ion-icon{
     filter: grayscale(20%);
 }
 */
-.two-card:hover{
-    transform: scale(1.1);
+.two-card img:hover{
+    transform: scale(1.2);
     filter: grayscale(20%);
 }
