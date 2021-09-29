@@ -44,24 +44,30 @@
     column-gap: 2.5vh;
     /*overflow: hidden;*/
     /*justify-items: center;*/
+
 }
 .two-card{
     grid-column: two-card;
     position: relative;
     box-shadow: inset 0 0 0 0 rgba(0,0,0,.0);
+    overflow: hidden;
+
 }
 
 .lamp{
     grid-area: lamp;
     position: relative;
+
 }
 .square-box {
     grid-area: square-box;
     position: relative;
+
 }
 .bag{
     grid-area: bag;
     position: relative;
+
 }
 .wrapper_end{
     grid-area: wrapper_end;
@@ -72,6 +78,7 @@ img{
     display: block;
     transition: .25s ease-in-out;
     backface-visibility: hidden;
+    overflow: hidden;
 }
 
 
@@ -152,4 +159,19 @@ ion-icon{
 .icon:hover{
     background-color: var(--wrapper-background);
     color: var(--images-icons-background);
+}
+
+/*
+.grid{
+    overflow: hidden;
+   !* display: contents;*!
+}
+.grid:hover{
+    transform: scale(1.1);
+    filter: grayscale(20%);
+}
+*/
+.two-card:hover{
+    transform: scale(1.1);
+    filter: grayscale(20%);
 }
