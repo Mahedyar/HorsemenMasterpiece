@@ -16,13 +16,14 @@
     height: 100%;
 }
 
-.header--content {
+h1 {
     color: var(--Header-content);
     text-align: center;
     margin: 30vh 4vw 0 4vw;
-    font-size: 3.87rem;
+    font-size: 62px/*3.87rem*/;
     letter-spacing: 0;
     line-height: 72px;
+    font-weight: 700;
 
 }
 
@@ -57,16 +58,19 @@
 .lamp{
     grid-area: lamp;
     position: relative;
+    overflow: hidden;
 
 }
 .square-box {
     grid-area: square-box;
     position: relative;
+    overflow: hidden;
 
 }
 .bag{
     grid-area: bag;
     position: relative;
+    overflow: hidden;
 
 }
 .wrapper_end{
@@ -144,22 +148,22 @@ a{
     opacity: 1;
 }
 
-.icon{
-    font-size: x-large;
-    color: var(--wrapper-background);
+svg{
+
     background-color: rgba(201, 145, 107, 0.7);
     display: inline-block;
     margin-left: -5px;
+    padding: 1rem;
+  /*  color:  var(--wrapper-background);*/
 
 }
-ion-icon{
-  padding: 1rem;
+g:hover{
+    fill: var(--images-icons-background);
 }
-.icon:hover{
+svg:hover{
     background-color: var(--wrapper-background);
-    color: var(--images-icons-background);
-}
 
+}
 /*
 .grid{
     overflow: hidden;
@@ -173,4 +177,57 @@ ion-icon{
 .two-card img:hover{
     transform: scale(1.2);
     filter: grayscale(20%);
+}
+.square-box img:hover{
+    transform: scale(1.2);
+    filter: grayscale(20%);
+}
+.lamp img:hover{
+    transform: scale(1.2);
+    filter: grayscale(20%);
+}
+.bag img:hover{
+    transform: scale(1.2);
+    filter: grayscale(20%);
+}
+
+
+@media screen and (max-width: 1239px){
+    h1 {
+        color: var(--Header-content);
+        text-align: center;
+        margin: 20vh 4vw 0 4vw;
+        font-size: 53px/*3.87rem*/;
+        letter-spacing: 0;
+        line-height: 61px;
+        font-weight: 700;
+
+    }
+    .main-page {
+        display: grid;
+        grid-template: 55vh 6vh 50vh 4vh/ 100% auto 70vh auto;
+        grid-template-areas:"header"
+                        "wrapper"
+                        "grid__picture"
+                         "wrapper_end";
+        grid-gap: 2vh;
+        justify-items: center;
+    }
+
+    .grid__picture--image {
+        grid-area: grid__picture;
+        display: grid;
+        grid-template: 25vh 25vh/ 30vh 30vh;
+        grid-template-areas: "two-card   lamp"
+                         "square-box   bag";
+        row-gap: 1.5vh;
+        column-gap: 1.5vh;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        /*overflow: hidden;*/
+        /*justify-items: center;*/
+
+    }
+
 }
