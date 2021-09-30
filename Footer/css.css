@@ -9,7 +9,7 @@ body{
 }
 #footer{
     height: 95vh;
-    background-image: url(comp6-footer-bg.png),url(comp6-patternbg.png) ;
+    background-image: url(../Details/comp6-footer-bg.png),url(comp6-patternbg.png) ;
     background-position: left center;
     background-repeat: no-repeat, repeat;
     background-size: auto ;
