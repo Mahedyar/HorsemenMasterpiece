@@ -2,16 +2,50 @@
     --first-color: #c9916b;
     --second-color:#ffffff;
     --third--color:#d6dad8;
-    --background-color:#2d453b;
+    --background-color:#39574a;
 }
+
+
 
 body{
     font-family: Arial;
 }
-h1{
-    color: white;
-    font-size: 1.5rem;
+header{
+    /*padding: 15px 20px;*/
+    /*background-color: var(--background-color);*/
+    background: transparent;
 }
+
+.headerFixer--sticky {
+    position: fixed;
+    background-color: var(--background-color);
+    animation: slideInDown;
+    animation-duration: 0.7s;
+
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 32px;
+    width: 98%;
+
+
+
+}
+nav img{
+    width: 150px;
+
+}
+
+.main-nav {
+    display: none;
+    list-style-type: none;
+}
+
 .hamburger-menu{
     width: 30px;
     height: 30px;
@@ -25,33 +59,26 @@ h1{
     border-radius: 10px;
 }
 
-header{
-    padding: 15px 20px;
-    background-color: var(--background-color);
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.main-nav {
-     display: none;
-     list-style-type: none;
- }
-
 #hamburger-links{
     display: none;
 }
 
 .main-nav a , #hamburger-links a {
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 15px;
+    font-size: 15px;
     /*padding-left: 40px;*/
     color: white;
-    font-weight: 700;
+    font-weight: 520;
     transition: all .1s ease-in;
     justify-self: center;
 }
+
+#caseStudiesLink , #detailsLink{
+    color: var(--first-color);
+}
+
+
 #hamburger-links{
     background-color:var(--background-color);
     display: flex;

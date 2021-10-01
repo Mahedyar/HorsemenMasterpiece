@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="http://fonts.cdnfonts.com/css/comfortaa-3" rel="stylesheet">
+
+  <link rel="stylesheet" href="../HomePage/NavStyle.css">
+  <link rel="stylesheet" href="../Normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+
+<div class="container_main">
+  <div class="header">
+    <div class="image__header">
+        <nav id="nav">
+          <img src="../HomePage/Image/Small-logo.png">
+          <ul class="main-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="caseStudiesLink">Case studies</a></li>
+            <li><a href="#" id="detailsLink">Details</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" style="text-decoration: underline">Buy Now</a></li>
+
+          </ul>
+          <div class="hamburger-menu" >
+            <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--           <i class="fa fa-bars"></i>-->
+            </a>
+          </div>
+        </nav>
+      <div id="hamburger-links" >
+        <div ><a  href="#home">Home</a></div>
+        <div><a  href="#case studies">Case studies</a></div>
+        <div><a href="#details">Details</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="aside_start">
+    <div>
+      <h1>Marketing strategy <br>for Larveno</h1>
+      <h6>Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+        quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h6>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container__image">
+      <div class="image1">
+        <img class="image__big" src="comp6-single-image1.png">
+        <h5>Lorem isum dolor mit samet et omnia</h5>
+      </div>
+      <div class="image2">
+        <img class="image__small" src="comp6-single-image2.jpg">
+        <h5>Testo vira terrum</h5>
+      </div>
+      <div class="image3">
+        <img class="image__small" src="comp6-single-image3.jpg">
+        <h5>Testo vira terrum</h5>
+      </div>
+      <div class="image4">
+        <img class="image__big" src="comp6-single-image4.jpg">
+        <h5>Lorem isum dolor mit samet et omnia</h5>
+      </div>
+
+    </div>
+  </div>
+  <div class="aside_end">
+    <div>
+      <h6 class="h6--part1--aside_end">Our mission</h6>
+      <h6>Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+        nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
+        quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h6>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function hamburgerMenu() {
+    var x = document.getElementById("hamburger-links");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+</script>
+
+<script>
+  window.onscroll = function() {headerFixer()};
+
+  var header = document.getElementById("nav");
+  var sticky = header.offsetTop;
+
+  function headerFixer() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("headerFixer--sticky");
+    } else {
+      header.classList.remove("headerFixer--sticky");
+    }
+  }
+</script>
+</body>
+</html>
