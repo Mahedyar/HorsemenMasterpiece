@@ -12,7 +12,7 @@ body {
 }
 .container_main {
     display: grid;
-    grid-template: 100vh 100vh 170vh 90vh 55vh 90vh/100% auto auto auto;
+    grid-template: 100vh 100vh 190vh 65vh 59vh 90vh/100% auto auto auto;
     grid-template-areas: "header"
                          "aside_start"
                          "container"
@@ -50,13 +50,23 @@ h1 {
     margin-top: 20vh;
 }
 
-h6 {
+
+
+.h6--part2--aside_end {
     text-align: center;
     font-size: 2em;
     line-height: 5.5vh;
     padding: 0 12vw;
     font-weight: 400;
     margin-bottom: 15vh;
+}
+.h6--part1--aside_end{
+    color: var(--first-color);
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    font-size: 2em;
+    text-align: center;
+
 }
 .container{
     grid-area: container;
@@ -118,27 +128,22 @@ h5 {
     grid-area: aside_end;
     /* background-color: gray;*/
 }
-.h6--part1--aside_end{
-    color: var(--first-color);
-    margin-top: 30vh;
-    margin-bottom: 5vh;
 
-}
 
 .image_end{
     grid-area: image_end;
-    background-color: purple;
+   /* background-color: purple;*/
 }
 
 .image_end--grid{
     display: grid;
-    grid-template: 6vh 55vh/33.33vw auto auto;
+    grid-template: 6vh 53vh/33.33vw auto auto;
     grid-template-areas: "text text text"
                           "three_image1 three_image2 three_image3";
 }
 .text{
     grid-area: text;
-    background-color: yellowgreen;
+    /*background-color: yellowgreen;*/
 }
 
 p {
@@ -160,6 +165,9 @@ p {
     grid-area: three_image1;
     background-color: pink;
 }
+
+
+
 .three_image2{
     grid-area: three_image2;
     background-color: palegreen;
@@ -170,7 +178,13 @@ p {
 }
 .footer_end{
     grid-area: footer_end;
-    background-color: #ed3b2e;
+    /*background-color: #ed3b2e;*/
+    background-image: url(comp6-footer-bg.png),url(comp6-patternbg.png);
+    background-position: left center;
+    background-repeat: no-repeat, repeat;
+    background-size: auto ;
+    padding:0;
+    margin: 0;
 }
 .footer_end--grid{
     display: grid;
@@ -180,15 +194,72 @@ p {
 }
 .input--footer{
     grid-area: input--footer;
-    background-color: palevioletred;
+    /*background-color: palevioletred;*/
+    padding-right: 0;
+    padding-left: 20vw;
+    padding-top: 11vh;
 }
+h3 {
+    font-size: 35px;
+    line-height: 47px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--second-color);
+}
+.text2_footer
+ {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--second-color);
+    text-align: left;
+    padding-top: 3vh;
+
+}
+.input--footer--style{
+    border:0;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    font-family: 'Comfortaa', sans-serif;
+    color: var(--second-color);
+    border-bottom: 1px solid var(--second-color);
+    width: 25vw;
+    padding-bottom: 0.6rem;
+}
+input[type=text]:focus {
+    font-size: 15px;
+    color: gray;
+    width: 25vw;
+}
+.input--footer--button{
+    width: 7vw;
+    height: 5vh;
+    border: 0;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    font-size: 17px;
+    color: var(--second-color);
+    font-family: 'Comfortaa', sans-serif;
+    position: absolute;
+    margin: -1vh 1vw;
+    cursor: pointer;
+}
+.footer--input--button {
+    position: relative;
+    align-items: center;
+    padding-top: 6vh;
+}
+
 .image--footer{
     grid-area: image--footer;
-    background-color: yellow;
+    /*background-color: yellow;*/
 }
 .copy--footer{
     grid-area: copy--footer;
-    background-color: darksalmon;
+   /* background-color: darksalmon;*/
 }
 
 @media screen and (max-width: 768px){
