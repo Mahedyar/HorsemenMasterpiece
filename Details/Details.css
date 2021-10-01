@@ -40,7 +40,8 @@ body {
     grid-area: aside_start;
     /* background-color: pink;*/
 }
-h1 {
+
+.h1--title--aside_start {
     font-size: 62px;
     line-height: 72px;
     font-weight: 700;
@@ -50,9 +51,7 @@ h1 {
     margin-top: 20vh;
 }
 
-
-
-.h6--part2--aside_end {
+.h6--text--aside_end {
     text-align: center;
     font-size: 2em;
     line-height: 5.5vh;
@@ -60,7 +59,7 @@ h1 {
     font-weight: 400;
     margin-bottom: 15vh;
 }
-.h6--part1--aside_end{
+.h6--title--aside_end{
     color: var(--first-color);
     margin-top: 10vh;
     margin-bottom: 5vh;
