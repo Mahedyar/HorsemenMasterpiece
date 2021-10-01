@@ -12,7 +12,7 @@ body {
 }
 .container_main {
     display: grid;
-    grid-template: 100vh 100vh 190vh 65vh 59vh 90vh/100% auto auto auto;
+    grid-template: 100vh 100vh 190vh 65vh 59vh 85vh/100% auto auto auto;
     grid-template-areas: "header"
                          "aside_start"
                          "container"
@@ -186,7 +186,7 @@ p {
 }
 .footer_end--grid{
     display: grid;
-    grid-template: 80vh 10vh/60% auto;
+    grid-template: 75vh 10vh/60% auto;
     grid-template-areas:"input--footer image--footer"
                          "copy--footer  copy--footer";
 }
@@ -208,7 +208,7 @@ h3 {
  {
     font-size: 26px;
     line-height: 36px;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
     color: var(--second-color);
     text-align: left;
