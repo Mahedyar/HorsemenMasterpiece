@@ -12,7 +12,7 @@
         margin: auto;
         font-family: 'Comfortaa', cursive;
 
-        line-height: 3vh;
+        /*line-height: 3vh;*/
     }
 
     h4 {
@@ -22,7 +22,7 @@
     .header {
         width: 100vw;
         /*height: 45vh;*/
-        height: 100vh;
+        height: 60vh;
         display: flex;
         flex-direction: row;
         background-image: url(Image/backgroundshape.png), url(Image/background.png);
@@ -39,7 +39,7 @@
         display: flex;
         width: 65vw;
         /*height: 45vh;*/
-        height: 50vh;
+        height: 60vh;
         justify-content: right;
         align-self: end;
         margin-left: -20vw;
@@ -48,8 +48,8 @@
 
     .header__imageholder__image {
         width: 100%;
-        margin-right: -11vw;
-        margin-top: 3vh;
+        margin-right: -5vw;
+        margin-top: 0;
     }
 
     .header__text {
@@ -58,13 +58,14 @@
         font-size: 5.5vw;
         font-weight: bolder;
         width: 60vw;
+        line-height: 4.3vh;
         /*margin-right: -100px;*/
     }
 
     .header__buttonHolder__button {
-        font-size: 1.8vw;
+        font-size: 1.5vw;
         color: var(--second-color);
-        padding: 15px 25px;
+        padding: 10px 17px;
         border-color: var(--second-color);
         border-style: solid;
         border-radius: 25px;
@@ -155,9 +156,9 @@
     }
 
     .secondpart__text {
-        font-size: 20px;
-        font-weight: 700;
-        /*font-weight: bold;*/
+        font-size: 18px;
+        line-height: 3vh;
+        font-weight: bolder;
     }
 
     .secondpart__title {
@@ -208,7 +209,7 @@
     /*my codes---------------------------------------*/
     .belowSlider-grid{
         display: grid;
-        grid-area: 4rem 20rem / 50vw 50vw;
+        grid-template: 4rem 47rem / 50vw 50vw;
         grid-template-areas: "seeMore-bar seeMore-bar"
                              "people-img below-text";
     }
@@ -221,13 +222,11 @@
     }
     .below-text{
         grid-area: below-text;
-        height: 100%;
     }
     /*my codes---------------------------------------*/
 
     .belowSlider__seperator{
         background-color: var(--first-color);
-        height: 6vh;
         color: var(--second-color);
         display: flex;
         align-items: center;
@@ -235,21 +234,29 @@
         font-size: 2vw;
     }
     .belowSlider__imageHolder{
-        /* height: 35rem; */
-        width: 50vw;
+        /*!*height: 50rem;*!*/
+        /*!* height: 35rem; *!*/
+        /*width: 50vw;*/
+        background: url("Image/peopleatTable.jpg");
+        background-size: 50vw 47rem , cover;
+        background-repeat: no-repeat;
     }
     .belowSlider img {
-        /* height: 50vh; */
-        width: 100%;
+        /*!* height: 50vh; *!*/
+        /*width: 100%;*/
+        /*height: 47rem;*/
     }
     .belowSlider__text{
-        padding: 5vh 8vw;
+        height: 40.25rem;
         /* height: 100%; */
+        /*padding: 13vh 8vw 0 8vw;*/
         background-color: var(--background-color);
+        background-size: 50vw 47rem;
         color: var(--second-color);
         font-size: 3vw;
         line-height: 4vh;
         font-weight: bold;
+
     }
     .belowSlider p {
         font-weight: normal;
@@ -257,5 +264,8 @@
 
     }
 
+    .belowSlider-textContainer{
+        margin: 10vh 1vw;
+    }
 
 }

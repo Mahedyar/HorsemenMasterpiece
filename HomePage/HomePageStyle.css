@@ -49,7 +49,7 @@
     .header__imageholder__image {
         width: 100%;
         margin-right: -11vw;
-        margin-top: 3vh;
+        margin-top: 12vh;
     }
 
     .header__text {
@@ -64,7 +64,7 @@
     .header__buttonHolder__button {
         font-size: 1.8vw;
         color: var(--second-color);
-        padding: 15px 25px;
+        padding: 7px 15px;
         border-color: var(--second-color);
         border-style: solid;
         border-radius: 25px;
