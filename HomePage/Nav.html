@@ -12,7 +12,7 @@
 
     <nav>
         <h1><img src="Image/Small-logo.png"></h1>
-        <ul class="main-nav">
+        <ul class="main--nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Case studies</a></li>
             <li><a href="#">Details</a></li>
@@ -21,7 +21,7 @@
             <li><a href="#">Contact</a></li>
 
         </ul>
-        <div class="hamburger-menu" >
+        <div class="hamburger--menu" >
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <span></span>
                 <span></span>
@@ -33,15 +33,18 @@
     </nav>
 
 </header>
-<ul id="hamburger-links" >
-    <li class="hamburger-links__li"><a  href="#home">Home</a></li>
-    <li class="hamburger-links__li"><a  href="#case studies">Case studies</a></li>
-    <li class="hamburger-links__li"><a href="#details">Details</a></li>
-</ul>
+<div class="hamburger--holder">
+    <ul id="hamburger--links" >
+        <li class="hamburger-links__li"><a  href="#home">Home</a></li>
+        <li class="hamburger-links__li"><a  href="#case studies">Case studies</a></li>
+        <li class="hamburger-links__li"><a href="#details">Details</a></li>
+    </ul>
+</div>
+
 
 <script>
     function myFunction() {
-        var x = document.getElementById("hamburger-links");
+        var x = document.getElementById("hamburger--links");
         // var x = document.getElementsByClassName("hamburger-links__li");
 
         if (x.style.opacity === "0") {

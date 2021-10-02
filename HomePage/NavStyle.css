@@ -12,11 +12,11 @@ h1{
     color: white;
     font-size: 1.5rem;
 }
-.hamburger-menu{
+.hamburger--menu{
     width: 30px;
     height: 30px;
 }
-.hamburger-menu span{
+.hamburger--menu span{
     display: block;
     width: 30px;
     height: 5px;
@@ -37,12 +37,12 @@ nav{
 ul {
     margin: 0;
 }
-.main-nav , #hamburger-links {
+.main--nav , #hamburger--links {
      display: none;
      list-style-type: none;
  }
 
-#hamburger-links{
+#hamburger--links{
     background-color:var(--background-color);
     padding: 3vw 2vh;
     display: block;
@@ -52,11 +52,11 @@ ul {
 
     /*height: 20%;*/
 }
-#hamburger-links ul li {
+#hamburger--links ul li {
     margin-top: 30px;
 }
 
-.main-nav a , #hamburger-links a {
+.main--nav a , #hamburger--links a {
     text-decoration: none;
     padding: 5px 10px;
     /*padding-left: 40px;*/
@@ -65,27 +65,48 @@ ul {
     transition: all .1s ease-in;
     justify-self: center;
 }
+.hamburger--holder{
+
+
+}
 
 
 
-.main-nav a:hover , #hamburger-links a:hover{
+.main--nav a:hover , #hamburger--links a:hover{
     /*background-color: gray;*/
     color: var(--first-color);
 }
 
-@media (min-width: 767px) {
-    .hamburger-menu{
+
+@media (min-width: 809px ) {
+    .hamburger--holder{
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+    #hamburger--links{
+        padding-right: 100px;
+    }
+    /*#hamburger--links li {*/
+    /*    display: none;*/
+    /*    padding: 0;*/
+    /*}*/
+
+
+}
+@media (min-width: 1230px) {
+    .hamburger--menu{
         display: none;
     }
-    .main-nav{
+    .main--nav{
         display: flex;
     }
-    #hamburger-links {
+    #hamburger--links {
         padding: 0;
         opacity: 0;
         height: 0;
     }
-    #hamburger-links li {
+    #hamburger--links li {
         display: none;
     }
 
