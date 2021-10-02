@@ -4,7 +4,7 @@
     --third--color:#d6dad8;
     --background-color:#2d453b;
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1240px){
 
     body {
         width: 100vw;
@@ -22,12 +22,12 @@
     .header {
         width: 100vw;
         /*height: 45vh;*/
-        height: 60vh;
+        height: 70vh;
         display: flex;
         flex-direction: row;
         background-image: url(Image/backgroundshape.png), url(Image/background.png);
         background-position: top;
-        background-size: 35vw 35vh, cover;
+        background-size: 35vw 60vh, cover;
         background-repeat: no-repeat;
         justify-content: space-between;
         align-items: flex-start;
@@ -39,7 +39,7 @@
         display: flex;
         width: 65vw;
         /*height: 45vh;*/
-        height: 60vh;
+        height: 70vh;
         justify-content: right;
         align-self: end;
         margin-left: -20vw;
@@ -47,25 +47,26 @@
     }
 
     .header__imageholder__image {
-        width: 100%;
-        margin-right: -5vw;
+        width: 85%;
+        margin-right: 5vw;
         margin-top: 0;
     }
 
     .header__text {
         align-self: center;
         color: var(--first-color);
-        font-size: 5.5vw;
+        font-size: 5vw;
         font-weight: bolder;
         width: 60vw;
-        line-height: 4.3vh;
+        line-height: 7vh;
+        padding-left: 5vw;
         /*margin-right: -100px;*/
     }
 
     .header__buttonHolder__button {
         font-size: 1.5vw;
         color: var(--second-color);
-        padding: 10px 17px;
+        padding: 13px 20px;
         border-color: var(--second-color);
         border-style: solid;
         border-radius: 25px;
@@ -73,7 +74,7 @@
     }
 
     .header__buttonHolder {
-        margin-top: 2.7vh;
+        margin-top: 5vh;
     }
 
 
@@ -86,12 +87,12 @@
 
     .secondpart__circledtextHolder {
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
 
     .secondpart__circledtextHolder__image {
         /*width: 70vw;*/
-        width: 100%;
+        width: 70%;
         margin-top: -20vh;
     }
 
@@ -124,12 +125,13 @@
         grid-area: what-can;
         margin-top: 5vh;
         margin-left: 7vw;
+        font-size: 1rem;
     }
 
     .icons{
         grid-area: icons;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 0 7vw;
     }
 
@@ -141,7 +143,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2vw;
+        font-size: 1.1rem;
+        font-weight: lighter;
     }
 
     .slider{
@@ -155,12 +158,6 @@
         margin: 5vh 8vw;
     }
 
-    .secondpart__text {
-        font-size: 18px;
-        line-height: 3vh;
-        font-weight: bolder;
-    }
-
     .secondpart__title {
         margin-top: 70px;
         font-size: 1rem;
@@ -168,10 +165,17 @@
         font-weight: lighter;
     }
 
+
+    .secondpart__text {
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        font-weight: bold;
+    }
+
     .secondpart__button {
         font-size: 1rem;
         color: var(--second-color);
-        padding: 1.7vw 3vh;
+        padding: 1.2vh 3vw;
         border-radius: 44vw;
         font-weight: bold;
         background-color: var(--first-color);
@@ -186,7 +190,7 @@
     }
 
     .secondpart__4Image img{
-        width: 18vw;
+        width: 13vw;
     }
 
     .secondpart__4Image div {
@@ -203,7 +207,9 @@
     .secondpart__4Image span {
         display: inline-block;
         margin-top: 1vh;
-        font-size: 3vw;
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        font-weight: bold;
     }
 
     /*my codes---------------------------------------*/
@@ -233,7 +239,8 @@
         /*align-items: center;*/
         /*justify-content: center;*/
         text-align: center;
-        font-size: 2vw;
+        font-size: 1.2rem;
+        font-weight: lighter;
     }
 
     .belowSlider__seperator span{
