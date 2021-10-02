@@ -34,13 +34,26 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.main-nav {
+ul {
+    margin: 0;
+}
+.main-nav , #hamburger-links {
      display: none;
      list-style-type: none;
  }
 
 #hamburger-links{
-    display: none;
+    background-color:var(--background-color);
+    padding: 3vw 2vh;
+    display: block;
+    opacity: 0;
+    transition: all .4s;
+    line-height: 8vh;
+
+    /*height: 20%;*/
+}
+#hamburger-links ul li {
+    margin-top: 30px;
 }
 
 .main-nav a , #hamburger-links a {
@@ -52,15 +65,7 @@ nav{
     transition: all .1s ease-in;
     justify-self: center;
 }
-#hamburger-links{
-    background-color:var(--background-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 3vw 2vh;
-    line-height:8vh;
-}
+
 
 
 .main-nav a:hover , #hamburger-links a:hover{
@@ -76,6 +81,11 @@ nav{
         display: flex;
     }
     #hamburger-links {
+        padding: 0;
+        opacity: 0;
+        height: 0;
+    }
+    #hamburger-links li {
         display: none;
     }
 

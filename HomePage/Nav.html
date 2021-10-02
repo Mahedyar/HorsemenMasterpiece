@@ -33,19 +33,21 @@
     </nav>
 
 </header>
-<div id="hamburger-links" >
-    <div ><a  href="#home">Home</a></div>
-    <div><a  href="#case studies">Case studies</a></div>
-    <div><a href="#details">Details</a></div>
-</div>
+<ul id="hamburger-links" >
+    <li class="hamburger-links__li"><a  href="#home">Home</a></li>
+    <li class="hamburger-links__li"><a  href="#case studies">Case studies</a></li>
+    <li class="hamburger-links__li"><a href="#details">Details</a></li>
+</ul>
 
 <script>
     function myFunction() {
         var x = document.getElementById("hamburger-links");
-        if (x.style.display === "block") {
-            x.style.display = "none";
+        // var x = document.getElementsByClassName("hamburger-links__li");
+
+        if (x.style.opacity === "0") {
+            x.style.opacity = "1";
         } else {
-            x.style.display = "block";
+            x.style.opacity = "0";
         }
     }
 </script>
