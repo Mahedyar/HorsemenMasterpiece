@@ -37,7 +37,7 @@
 
     .header__imageholder {
         display: flex;
-        width: 65vw;
+        width: 45vw;
         /*height: 45vh;*/
         height: 70vh;
         justify-content: right;
@@ -58,7 +58,7 @@
         font-size: 5vw;
         font-weight: bolder;
         width: 60vw;
-        line-height: 7vh;
+        line-height: 9vh;
         padding-left: 5vw;
         /*margin-right: -100px;*/
     }
@@ -109,6 +109,7 @@
                              "icons icons"
                              "caseStudy-bar caseStudy-bar"
                              "slider slider";
+        overflow: hidden;
     }
 
     .walls{
@@ -218,6 +219,7 @@
         grid-template: 4rem 47rem / 50vw 50vw;
         grid-template-areas: "seeMore-bar seeMore-bar"
                              "people-img below-text";
+        overflow: hidden;
     }
 
     .seeMore-bar{
@@ -238,6 +240,7 @@
         /*display: flex;*/
         /*align-items: center;*/
         /*justify-content: center;*/
+        height: 100%;
         text-align: center;
         font-size: 1.2rem;
         font-weight: lighter;
@@ -267,8 +270,8 @@
         background-color: var(--background-color);
         background-size: 50vw 47rem;
         color: var(--second-color);
-        font-size: 3vw;
-        line-height: 4vh;
+        font-size: 2.5vw;
+        line-height: 7.5vh;
         font-weight: bold;
 
     }
