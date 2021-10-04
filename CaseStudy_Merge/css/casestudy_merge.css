@@ -521,6 +521,7 @@ g:hover {
         padding: 0;
         margin: 0;
     }
+
     .footer_end--grid {
         display: grid;
         grid-template: 55vh 5vh/60% auto;
@@ -656,7 +657,8 @@ g:hover {
     }
 
 }
-@media screen and (max-width:767px ) {
+
+@media screen and (max-width: 767px ) {
     h1 {
         color: var(--Header-content);
         text-align: center;
@@ -699,6 +701,7 @@ g:hover {
 
 
     }
+
     .image_icon_svg {
 
         background-color: rgba(201, 145, 107, 0.7);
@@ -706,8 +709,8 @@ g:hover {
         margin-left: -5px;
         padding: 15px 15px;
         /*  color:  var(--wrapper-background);*/
-        width: 10vw;
-        height: 8vh;
+        width: 8vw;
+        height: 6vh;
         font-size: small;
 
     }
@@ -715,7 +718,7 @@ g:hover {
     /* *******************footer******************/
     .main-page {
         display: grid;
-        grid-template: 80vh 8vh 196vh 8vh 160vh/ 100% auto 75vw auto auto;
+        grid-template: 80vh 8vh 196vh 8vh 140vh/ 100% auto 75vw auto auto;
         grid-template-areas:"header"
                          "wrapper"
                          "grid__picture"
@@ -724,22 +727,24 @@ g:hover {
         grid-gap: 2vh;
         justify-items: center;
     }
+
     .footer_end--grid {
         display: grid;
-        grid-template: 55vh 100vh 5vh/auto;
+        grid-template: 55vh 80vh 5vh/auto;
         grid-template-areas:"input--footer"
                              "image--footer"
                               "copy--footer";
     }
+
     .footer_end {
         width: 100%;
         height: 100%;
         grid-area: footer_end;
         /*background-color: #ed3b2e;*/
         background-image: url(../images/comp6-footer-bg.png), url(../images/background.png);
-        background-position:  top center;
+        background-position: top center;
         background-repeat: no-repeat, repeat;
-        background-size: auto ;
+        background-size: auto;
         padding: 0;
         margin: 0;
     }
@@ -804,27 +809,23 @@ g:hover {
         margin-top: 8vh;
         cursor: pointer;
     }
+
     .footer--input--button {
-        display: flex;flex-direction: column;justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         position: relative;
         align-items: center;
         padding-top: 2vh;
         margin-left: -12vw;
     }
 
-
-    .image_icon_svg {
-
-        background-color: rgba(201, 145, 107, 0.7);
-        display: inline-block;
-        margin-left: -5px;
-        padding: 15px 15px;
-        /*  color:  var(--wrapper-background);*/
-        width: 7vw;
-        height: 5vh;
-        font-size: small;
-
+    .image--footer_position {
+        padding-top: 15vh;
+        padding-left: 8vw;
     }
+
+
     .input--footer {
         grid-area: input--footer;
         /*background-color: palevioletred;*/
@@ -845,19 +846,20 @@ g:hover {
         margin: 8vh 0vh 0.5em -1.5em;
         padding: 0.2em 1em;
         color: var(--third--color);
-        font-size: 17px;
+        font-size: 15px;
 
     }
 
     .wpcf7 form, .wpcf7-response-output-yes {
         border: none;
         float: left;
-        margin:8vh 0vh 0.5em -1.5em;
+        margin: 8vh 0vh 0.5em -1.5em;
         padding: 0.2em 1em;
         color: var(--third--color);
-        font-size: 17px;
+        font-size: 15px;
         display: none;
     }
+
     body:not(.cf7p-message) .wpcf7-not-valid-tip {
         position: absolute !important;
         left: 18px !important;
@@ -870,6 +872,7 @@ g:hover {
         padding: 0;
         border: none !important;
     }
+
     .wpcf7-not-valid-tip {
         color: #dc3232;
         display: block;
@@ -886,6 +889,15 @@ g:hover {
         width: 11px;
         height: 11px;
         transform: rotate(45deg);
+    }
+
+    .copy--footer {
+        margin-top: -3vh;
+        padding: 0 7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 }
