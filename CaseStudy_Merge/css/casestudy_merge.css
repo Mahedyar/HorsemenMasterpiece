@@ -648,17 +648,17 @@ g:hover {
     h1 {
         color: var(--Header-content);
         text-align: center;
-        margin: 20vh 4vw 0 4vw;
-        font-size: 53px /*3.87rem*/;
+        margin: 50vh 4vw 0 4vw;
+        font-size: 37px /*3.87rem*/;
         letter-spacing: 0;
-        line-height: 61px;
+        line-height: 43px;
         font-weight: 700;
 
     }
 
     .main-page {
         display: grid;
-        grid-template: 55vh 6vh 50vh 4vh 60vh/ 100% auto 70vh auto auto;
+        grid-template: 80vh 8vh 204.75vh 8vh 60vh/ 100% auto 80vw auto auto;
         grid-template-areas:"header"
                          "wrapper"
                          "grid__picture"
@@ -671,18 +671,32 @@ g:hover {
     .grid__picture--image {
         grid-area: grid__picture;
         display: grid;
-        grid-template: 25vh 25vh 25vh 25vh/ 30vh;
+        grid-template: 51.19vh 51.19vh 51.19vh 51.19vh/ 80vw;
         grid-template-areas: "two-card"
                                 " lamp"
                                 "square-box"
                                 "bag";
-        row-gap: 1.5vh;
-        column-gap: 1.5vh;
+        row-gap: 2vh;
         margin: 0;
         padding: 10px;
         box-sizing: border-box;
         /*overflow: hidden;*/
-        /*justify-items: center;*/
+        justify-items: center;
+        margin: 0 7vw;
+        padding: 0 2vw;
+
+
+    }
+    .image_icon_svg {
+
+        background-color: rgba(201, 145, 107, 0.7);
+        display: inline-block;
+        margin-left: -5px;
+        padding: 10px 15px;
+        /*  color:  var(--wrapper-background);*/
+        width: 12vw;
+        height: 8vh;
+        font-size: small;
 
     }
 
