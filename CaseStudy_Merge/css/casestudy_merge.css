@@ -160,37 +160,22 @@ a {
     opacity: 1;
 }
 
-.image_icon_svg {
+.icon {
 
     background-color: rgba(201, 145, 107, 0.7);
     display: inline-block;
     margin-left: -5px;
     padding: 1rem;
-    /*  color:  var(--wrapper-background);*/
-    width: 24px;
-    height: 24px;
-
+      color:  var(--wrapper-background);
 }
 
-g:hover {
-    fill: var(--images-icons-background);
-}
-
-.image_icon_svg:hover {
+.icon:hover {
     background-color: var(--wrapper-background);
+    color: var(--images-icons-background);
 
 }
 
-/*
-.grid{
-    overflow: hidden;
-   !* display: contents;*!
-}
-.grid:hover{
-    transform: scale(1.1);
-    filter: grayscale(20%);
-}
-*/
+
 .two-card img:hover {
     transform: scale(1.2);
     filter: grayscale(20%);
