@@ -658,7 +658,7 @@ g:hover {
 
     .main-page {
         display: grid;
-        grid-template: 80vh 8vh 204.75vh 8vh 60vh/ 100% auto 80vw auto auto;
+        grid-template: 80vh 8vh 196vh 8vh 60vh/ 100% auto 75vw auto auto;
         grid-template-areas:"header"
                          "wrapper"
                          "grid__picture"
@@ -671,7 +671,7 @@ g:hover {
     .grid__picture--image {
         grid-area: grid__picture;
         display: grid;
-        grid-template: 51.19vh 51.19vh 51.19vh 51.19vh/ 80vw;
+        grid-template: 49vh 49vh 49vh 49vh/ 75vw;
         grid-template-areas: "two-card"
                                 " lamp"
                                 "square-box"
@@ -679,7 +679,7 @@ g:hover {
         row-gap: 2vh;
         margin: 0;
         padding: 10px;
-        box-sizing: border-box;
+
         /*overflow: hidden;*/
         justify-items: center;
         margin: 0 7vw;
@@ -692,9 +692,9 @@ g:hover {
         background-color: rgba(201, 145, 107, 0.7);
         display: inline-block;
         margin-left: -5px;
-        padding: 10px 15px;
+        padding: 15px 15px;
         /*  color:  var(--wrapper-background);*/
-        width: 12vw;
+        width: 10vw;
         height: 8vh;
         font-size: small;
 
