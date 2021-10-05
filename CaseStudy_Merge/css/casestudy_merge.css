@@ -836,7 +836,7 @@ g:hover {
 
     body:not(.cf7p-message) .wpcf7-not-valid-tip {
         position: absolute !important;
-        left: 18px !important;
+        left: 10px !important;
         top: -13px !important;
         width: 44px !important;
         height: 44px !important;
