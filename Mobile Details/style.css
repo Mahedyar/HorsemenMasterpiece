@@ -381,7 +381,7 @@ g:hover {
 @media screen and (max-width: 768px){
     .container_main {
         display: grid;
-        grid-template: 100vh 60vh 205vh 60vh 140vh/100% ;
+        grid-template: 100vh 60vh 205vh 60vh 105vh/100% ;
         grid-template-areas: "header"
                          "aside_start"
                          "container"
@@ -446,7 +446,7 @@ g:hover {
 
     .footer_end--grid {
         display: grid;
-        grid-template: 55vh 80vh 5vh/auto;
+        grid-template: 55vh 45vh 5vh/auto;
         grid-template-areas:"input--footer"
                              "image--footer"
                               "copy--footer";
@@ -457,9 +457,9 @@ g:hover {
         height: 100%;
         grid-area: footer_end;
         /*background-color: #ed3b2e;*/
-        background-image: url(comp6-footer-bg.png), url(comp6-patternbg.png);
-        background-position: top center;
-        background-repeat: no-repeat, repeat;
+        background-image:  url(comp6-patternbg.png);
+        background-position: center;
+        background-repeat:  repeat;
         background-size: auto;
         padding: 0;
         margin: 0;
@@ -537,7 +537,7 @@ g:hover {
     }
 
     .image--footer_position {
-        padding-top: 15vh;
+        padding-top: 5vh;
         padding-left: 8vw;
     }
 
@@ -578,7 +578,7 @@ g:hover {
 
     body:not(.cf7p-message) .wpcf7-not-valid-tip {
         position: absolute !important;
-        left: 18px !important;
+        left: 19px !important;
         top: -13px !important;
         width: 44px !important;
         height: 44px !important;
