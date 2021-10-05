@@ -47,14 +47,15 @@ ul {
     padding: 3vw 2vh;
     display: block;
     opacity: 0;
-    transition: all .4s;
-    line-height: 8vh;
+    transition: all .2s;
+    /*line-height: 8vh;*/
 
     /*height: 20%;*/
 }
-#hamburger--links ul li {
-    margin-top: 30px;
+#hamburger--links li {
+    transition: all 0.2s;
 }
+
 
 .main--nav a , #hamburger--links a {
     text-decoration: none;
@@ -62,7 +63,7 @@ ul {
     /*padding-left: 40px;*/
     color: white;
     font-weight: 700;
-    transition: all .1s ease-in;
+    /*transition: all .1s ease-in;*/
     justify-self: center;
 }
 .hamburger--holder{
