@@ -692,7 +692,7 @@ g:hover {
     /* *******************footer******************/
     .main-page {
         display: grid;
-        grid-template: 80vh 8vh 196vh 8vh 125vh/ 100% auto 75vw auto auto;
+        grid-template: 80vh 8vh 196vh 8vh 105vh/ 100% auto 75vw auto auto;
         grid-template-areas:"header"
                          "wrapper"
                          "grid__picture"
@@ -704,7 +704,7 @@ g:hover {
 
     .footer_end--grid {
         display: grid;
-        grid-template: 55vh 65vh 5vh/auto;
+        grid-template: 55vh 45vh 5vh/auto;
         grid-template-areas:"input--footer"
                              "image--footer"
                               "copy--footer";
@@ -795,7 +795,7 @@ g:hover {
     }
 
     .image--footer_position {
-        padding-top: 15vh;
+        padding-top: 5vh;
         padding-left: 8vw;
     }
 
@@ -836,7 +836,7 @@ g:hover {
 
     body:not(.cf7p-message) .wpcf7-not-valid-tip {
         position: absolute !important;
-        left: 10px !important;
+        left: 19px !important;
         top: -13px !important;
         width: 44px !important;
         height: 44px !important;
