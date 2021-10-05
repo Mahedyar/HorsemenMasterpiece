@@ -167,17 +167,20 @@ p {
     grid-area: three_image1;
     background-color: pink;
     overflow: hidden;
+    position: relative;
 }
 
 .three_image2{
     grid-area: three_image2;
     background-color: palegreen;
     overflow: hidden;
+    position: relative;
 }
 .three_image3{
     grid-area: three_image3;
     background-color: plum;
     overflow: hidden;
+    position: relative;
 }
 .footer_end{
     grid-area: footer_end;
@@ -438,20 +441,22 @@ svg{
 .three_image1:hover .middle-image {
     opacity: 1;
 }
-.images--icons{
+.three_image2:hover .middle-image {
+    opacity: 1;
+}
+.three_image3:hover .middle-image {
+    opacity: 1;
+}
+.icon{
 
     background-color: rgba(201, 145, 107, 0.7);
     display: inline-block;
     margin-left: -5px;
     padding: 1rem;
     color:  var(--wrapper-background);
-    font-size: x-large;
 
 }
-ion-icon{
-    padding: 2.9vh 4.5vw;
-}
-.images--icons:hover{
+.icon:hover{
     background-color: var(--wrapper-background);
     color: var(--images-icons-background);
 }
